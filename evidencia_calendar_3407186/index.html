@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- menu responsive flex-->
+    <div class="main-header">
+        <div class="main-header__container">
+            <!-- logo-->
+            <div class="main-header__logo">
+            Calendario de Eventos
+            </div>
+            <!-- menu hamburgesa: toggle menu: se muestra en breakpoints <=500px -->
+            <button class="main-header__toggle" id="menu-toggle">
+                <div class="main-header__bar"></div>
+                <div class="main-header__bar"></div>
+                <div class="main-header__bar"></div>
+            </button>
+            <!--menu de opciones: se muetra en breakpoints >500px  -->
+            <div class="main-nav" id="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav-item">
+                    <a href="#" class="main-nav-link">
+                        Buscar
+                    </a>    
+                        
+                    </li>
+
+                    <li class="main-nav-item">
+                    <a href="#" class="main-nav-link">
+                        Ayuda
+                    </a>    
+                    
+                    </li>
+
+                    <li class="main-nav-item">
+                    <a href="#" class="main-nav-link">
+                    Configuracion   
+                    </a>    
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--calendar -->
+    <div class="container">
+        <div class="month">
+            <h2 class="month__name">
+                June
+            </h2>
+        </div>
+        <div class="days">
+            <div class="days__item">Mon</div>
+            <div class="days__item">Tue</div>
+            <div class="days__item">Wed</div>
+            <div class="days__item">Thu</div>
+            <div class="days__item">Fri</div>
+            <div class="days__item">Sat</div>
+            <div class="days__item">Sun</div>
+        </div>
+        <div class="schedule">
+            <div class="schedule__day">
+                1
+                <p class="color-evento" >GYM</p>
+                <p class="Descripcion">Descripcion: ir al GIM</p>
+                <p class="hora">hora: 1:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                2
+                <p class="color-evento" >Cita</p>
+                <p class="Descripcion">Descripcion: ir a la cita</p>
+                <p class="hora">hora: 1:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                3
+                <p class="color-evento" >Pago</p>
+                <p class="Descripcion">Descripcion: hacer el pago</p>
+                <p class="hora">hora: 10:00 am</p>
+            </div>
+            <div class="schedule__day">
+                4
+                <p class="color-evento" >Clase</p>
+                <p class="Descripcion">Descripcion: ir a la clase</p>
+                <p class="hora">hora: 12:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                5
+                <p class="color-evento" >Examen</p>
+                <p class="Descripcion">Descripcion: ir al examen</p>
+                <p class="hora">hora: 4:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                6
+                <p class="color-evento" >Viaje</p>
+                <p class="Descripcion">Descripcion: ir al viaje</p>
+                <p class="hora">hora: 12:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                7
+                <p class="color-evento" >Cena</p>
+                <p class="Descripcion">Descripcion: ir a la cena</p>
+                <p class="hora">hora: 7:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                8
+                <p class="color-evento" >Cine</p>
+                <p class="Descripcion">Descripcion: ir al cine</p>
+                <p class="hora">hora: 4:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                9
+                <p class="color-evento" >Compra</p>
+                <p class="Descripcion">Descripcion: hacer la compra/p>
+                <p class="hora">hora: 2:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                10 
+                <p class="color-evento" >Medico</p>
+                <p class="Descripcion">Descripcion: ir al medico</p>
+                <p class="hora">hora: 1:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                11
+                <p class="color-evento" >Reunion</p>
+                <p class="Descripcion">Descripcion: ir a la reunion</p>
+                <p class="hora">hora: 1:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                12
+                <p class="color-evento" >Cumple</p>
+                <p class="Descripcion">Descripcion: ir al cumple</p>
+                <p class="hora">hora: 2:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                13
+                <p class="color-evento" >Fiesta</p>
+                <p class="Descripcion">Descripcion: ir a la fiesta</p>
+                <p class="hora">hora: 9:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                14
+                <p class="color-evento" >Evento</p>
+                <p class="Descripcion">Descripcion: ir al evento</p>
+                <p class="hora">hora: 5:00 pm</p>
+            </div>
+            <div class="schedule__day">
+                
+                15
+                 <p class="color-evento" >Laborartorio</p>
+                <p class="Descripcion">Descripcion: ir al laboratorio</p>
+                <p class="hora">hora: 5:30 am</p>
+            </div>
+            <div class="schedule__day">
+                16
+                 <p class="color-evento" >Entrevista</p>
+                <p class="Descripcion">Descripcion: ir a la entrevista</p>
+                <p class="hora">hora: 8:00 am</p>
+            </div>
+            <div class="schedule__day">
+                17 
+                 <p class="color-evento" >Running</p>
+                <p class="Descripcion">Descripcion: ir a correr</p>
+                <p class="hora">hora: 5:00 am</p>
+            </div>
+            <div class="schedule__day">18</div>
+            <div class="schedule__day">19</div>
+            <div class="schedule__day">20</div>
+            <div class="schedule__day">21</div>
+            <div class="schedule__day">22</div>
+            <div class="schedule__day">23</div>
+            <div class="schedule__day">24</div>
+            <div class="schedule__day">25</div>
+            <div class="schedule__day">26</div>
+            <div class="schedule__day">27</div>
+            <div class="schedule__day">28</div>
+            <div class="schedule__day">29</div>
+            <div class="schedule__day">30</div>
+        </div>
+    </div>
+    <script>
+
+        const menuToggle = document.getElementById('menu-toggle')
+        const mainNav = document.getElementById('main-nav')
+        /* añadir el evento click y su funcionamiento*/
+        menuToggle.addEventListener('click'  , ()=>{
+            mainNav.classList.toggle('main-nav__open')
+        })
+    </script>
+
+</body>
+</html>
