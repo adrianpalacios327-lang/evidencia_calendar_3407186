@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- menu responsive flex-->
+    <div class="main-header">
+        <div class="main-header__container">
+            <!-- logo-->
+            <div class="main-header__logo">
+            Calendario de Eventos
+            </div>
+            <!-- menu hamburgesa: toggle menu: se muestra en breakpoints <=500px -->
+            <button class="main-header__toggle" id="menu-toggle">
+                <div class="main-header__bar"></div>
+                <div class="main-header__bar"></div>
+                <div class="main-header__bar"></div>
+            </button>
+            <!--menu de opciones: se muetra en breakpoints >500px  -->
+            <div class="main-nav" id="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav-item">
+                    <a href="#" class="main-nav-link">
+                        Buscar
+                    </a>    
+                        
+                    </li>
+
+                    <li class="main-nav-item">
+                    <a href="#" class="main-nav-link">
+                        Ayuda
+                    </a>    
+                    
+                    </li>
+
+                    <li class="main-nav-item">
+                    <a href="#" class="main-nav-link">
+                    Configuracion   
+                    </a>    
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--calendar -->
+    <div class="container">
+        <div class="month">
+            <h2 class="month__name">
+                Junio
+            </h2>
+        </div>
+        <div class="days">
+            <div class="days__item">Lunes</div>
+            <div class="days__item">Martes</div>
+            <div class="days__item">Miercoles</div>
+            <div class="days__item">Jueves</div>
+            <div class="days__item">Viernes</div>
+            <div class="days__item">Sabado</div>
+            <div class="days__item">Domingo</div>
+        </div>
+        <div class="schedule">
+            <div class="schedule_day">
+                <center>1</center>
+                <div class="title_event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqeXoRfeAlYIXvaF98YHG3aka0FKm84OZGh28i51cfdA&s=10" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Año Nuevo</h4>
+                        <p>Inicio de ciclo</p>
+                        <p>hora: 1:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day">
+                <center>2</center>
+                <div class="title_event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0gKJgMyhPyRkR7fLTr1OCD2LB1BVE3t55RCcymygqBg&s" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Día del Padre</h4>
+                        <p>Celebración</p>
+                        <p>hora: 2:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day">
+                 <center>3</center>
+                <div class="title_event">
+                    <img src="https://picsum.photos/100/50?random=3" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Sagrado Corazón</h4>
+                        <p>Festivo nacional</p>
+                        <p>hora: 3:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day">
+                <center>4</center>
+                <div class="title_event">
+                    <img src="https://picsum.photos/100/50?random=4" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Sagrado Corazón</h4>
+                        <p>Día puente</p>
+                        <p>hora: 4:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day">
+                   <center>5</center>
+                <div class="title_event">
+                    <img src="https://picsum.photos/100/50?random=5" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Sagrado Corazón</h4>
+                        <p>Fin de semana</p>
+                        <p>hora: 5:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day"><center>6</center></div>
+
+            <div class="schedule_day">
+                <center>7</center>
+                <div class="title_event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUyYbhkbnuzHVS61qPlGb1vMK-flSnfAPrlSLKF8AHA&s=10" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Día Mundial</h4>
+                        <p>De la salud</p>
+                        <p>hora: 6:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day"><center>8</center></div>
+
+            <div class="schedule_day">
+                <center>9</center>
+                <div class="title_event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu7ylGSAIZ2ppwOyieGEBrdYOaDWIlgihgtWbTh3aF_w&s=10" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Día del Medio</h4>
+                        <p>Ambiente sano</p>
+                        <p>hora: 7:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day">
+                <center>10</center>
+                <div class="title_event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL__q9X3X7DlWbYejHozlB9ek1nFFdQPz1-l8CYgzzJA&s=10" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>San Pedro</h4>
+                        <p>Fiestas regionales</p>
+                        <p>hora: 9:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day"><center>11</center></div>
+            <div class="schedule_day"><center>12</center></div>
+
+            <div class="schedule_day">
+                <center>13</center>
+                <div class="title_event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEzEDc27p7CINH2MiDjxhM4li0u3C57mxc54VndrEPig&s=10" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Día del Árbol</h4>
+                        <p>Siembra masiva</p>
+                        <p>hora: 10:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day"><center>14</center></div>
+
+            <div class="schedule_day">
+                <center>15</center>
+                <div class="title_event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxcX6dOZ_mGVLN4Ifpz-8jZvH8EbZiOcN5mV9vqphPOg&s=10" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Mitad de Año</h4>
+                        <p>Feria comercial</p>
+                        <p>hora:11:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day"><center>16</center></div>
+            <div class="schedule_day"><center>17</center></div>
+            <div class="schedule_day"><center>18</center></div>
+
+            <div class="schedule_day">
+                <center>19</center>
+                <div class="title_event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOdTlM1avayH3qidWMdiMitn0JDYYvX1toSrc5jWM91A&s=10" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Día del Maestro</h4>
+                        <p>Homenaje escolar</p>
+                        <p>hora: 12:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day">
+                <center>20</center>
+                <div class="title_event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4tK9DD5-r6G74jS3pjPyqw3g7Xcrl5xzGbh52yq_wiw&s=10" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Independencia</h4>
+                        <p>Fiesta nacional</p>
+                        <p>hora: 1:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day"><center>21</center></div>
+            <div class="schedule_day"><center>22</center></div>
+
+            <div class="schedule_day">
+                <center>23</center>
+                <div class="title_event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS35UXqk5dy9olomiXHWX1MKqJcr5iQe0TWpdnC-14P1A&s=10" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Día del Estudiante</h4>
+                        <p>Eventos y juegos</p>
+                        <p>hora: 2:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day"><center>24</center></div>
+            <div class="schedule_day"><center>25</center></div>
+            <div class="schedule_day"><center>26</center></div>
+
+            <div class="schedule_day">
+                <center>27</center>
+                <div class="title_event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTskIntWFB81he6A9AEKVXyYOD9niv1_Sv5K492qEpNw&s=10" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>Cultura Local</h4>
+                        <p>Danza y comida</p>
+                        <p>hora: 3:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day"><center>28</center></div>
+
+            <div class="schedule_day">
+                <center>29</center> 
+                <div class="title_event">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlpTFR21Zx3w-VbUIDj6tG257a9G7-f61Zmr6V1YQ3SQ&s=10" alt="Banner">
+                    <div class="info-festivo">
+                        <h4>San Pablo</h4>
+                        <p>Celebración final</p>
+                        <p>hora: 4:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule_day"><center>30</center></div>
+        </div> 
+    </div>
+
+    <script>
+
+        const menuToggle = document.getElementById('menu-toggle')
+        const mainNav = document.getElementById('main-nav')
+        /* añadir el evento click y su funcionamiento*/
+        menuToggle.addEventListener('click'  , ()=>{
+            mainNav.classList.toggle('main-nav__open')
+        })
+    </script>
+
+</body>
+</html>

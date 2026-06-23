@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f7fa;
+    padding: 90px 0 60px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #FFF;
+    max-width: 1200px;
+    box-shadow: 0 2px 20px rgba(0,0,0, 0.1);
+    border-radius: 10px;
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.month__name {
+    text-align: center;
+    color: #51565d;
+    font-weight: 400;
+    padding: 30px 0;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.month__name:hover {
+    color: #111;
+    letter-spacing: 1px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: center;
+    height: 70px;
+    border-bottom: 1px solid #a6a8b31f;
+    border-top: 1px solid #a6a8b31f;
+    color: #51565d;
+}
+
+.schedule {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(90px, 1fr));
+    grid-auto-rows: 120px;
+}
+
+.schedule_day {
+    position: relative;
+    border-bottom: 1px solid #a6a8b31f;
+    border-right: 1px solid #a6a8b31f;
+    padding: 8px;
+    color: #51565d;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-width: 90px;
+    min-height: 100px;
+
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.schedule_day:hover {
+    background-color: #f3f4f6;
+}
+
+.title_event {
+    background-color: rgb(8, 78, 54);
+    border: 1px solid rgb(15, 195, 27);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.title_event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.title_event img {
+    width: 100%;
+    height: 35px;
+    object-fit: cover;
+    border-bottom: 1px solid blue;
+}
+
+.title_event .info-festivo {
+    padding: 4px;
+}
+
+/* 🔥 CAMBIO PEDIDO: letra blanca más pequeña */
+.title_event h4 {
+    margin: 0;
+    font-size: 0.6rem; /* antes 0.7rem */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.title_event p {
+    margin: 0;
+    font-size: 0.55rem; /* antes 0.6rem */
+    color: #2bb923;
+}
+
+/* =========================
+   NAV GLOBAL
+   ========================= */
+
+.main-header{
+    background-color: #FFF;
+    box-shadow: 0 2px 10px rgba(0,0,0, 0.05);
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+.main-header__container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header-logo{
+    font-weight: 600;
+    color: #51565d;
+}
+
+.main-nav__list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav__link{
+    text-decoration: none;
+    color: #51565d;
+    font-size: 0.95rem;
+    transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.main-nav__link:hover{
+    color: black;
+    transform: translateY(-2px);
+}
+
+.main-header__toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    padding: 0;
+
+    transition: transform 0.3s ease;
+}
+
+.main-header__toggle:hover {
+    transform: scale(1.1);
+}
+
+.main-header__bar{
+    width: 25px;
+    height: 3px;
+    background-color: #51565d;
+    border-radius: 2px;
+
+    transition: background-color 0.3s ease;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media screen and (max-width:500px) {
+
+    .container {
+        width: 96%;
+        overflow-x: auto;
+    }
+
+    .schedule {
+        grid-template-columns: repeat(7, minmax(70px, 1fr));
+    }
+
+    .schedule_day {
+        min-width: 70px;
+        min-height: 90px;
+        padding: 7px 5px;
+        font-size: 0.8rem;
+    }
+
+    .title_event img {
+        display: none;
+    }
+
+    .title_event h4 {
+        font-size: 0.5rem;
+    }
+
+    .title_event p {
+        font-size: 0.45rem;
+    }
+
+    .main-header_container {
+        width: 96%;
+    }
+
+    .main-header__toggle {
+        display: flex;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #FFF;
+        box-shadow: 0 10px 10px rgba(0,0,0, 0.05);
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .main-nav-item {
+        width: 100%;
+        border-top: 1px solid #a6a8b31f;
+    }
+
+    .main-nav__list {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+
+    .main-nav-link {
+        display: block;
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+    .main-nav__open {
+        max-height: 200px;
+    }
+}
